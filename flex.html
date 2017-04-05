@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .container{border:5px solid red;}
+            .container>div{border:5px solid blue;}
+        </style>
+    </head>
+    <body>
+        <style>
+            .container{
+                display:flex;
+                flex-direction: row;
+            }
+            .container>div{
+                flex-grow: 0;
+                flex-shrink: 1;
+            }
+            .container>div:nth-child(2){
+                flex-shrink: 0;
+            }
+            
+        </style>
+        <div class="container">
+            <div>안녕하</div>
+            <div>Lorem ipsum dolor</div>
+            <div>Lorem ipsum dolor</div>
+        </div>
+    </body>
+</html>
