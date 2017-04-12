@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/semantic.js"></script>
+    <style>
+        
+        
+        header {
+            padding-top: 50px;
+        }
+        
+        header h1 {
+            padding:3rem;
+            font-size:5rem;
+        }
+        
+        main {
+            padding-left: 3.1rem;
+        }
+        
+        main h2 {
+            font-size:4rem;
+            padding-bottom:1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>웹수업</h1>
+    </header>
+    <main>
+        <div class="ui menu fixed">
+            <a id="launch" class="ui icon item">
+                <i class="content icon"></i>
+            </a>
+            <div class="item">
+                opentutorials.org
+            </div>
+            <div class="right menu">
+                <div class="ui search small item">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="Common passwords...">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="ui sidebar vertical menu">
+            <ol>
+                <li><a href="1.html">html</a></li>
+                <li><a href="2.html">css</a></li>
+                <li><a href="3.html">js</a></li>
+            </ol>
+        </nav>
+        <article class="pusher">
+            <h2>html</h2>
+            HTML은 Hyper text markup language로서...
+        </article>
+    </main>
+    <script>
+        $('#launch').click(function() {
+            $('.ui.sidebar').sidebar('show');
+        })
+
+    </script>
+</body>
+
+</html>
